@@ -1,1 +1,9 @@
 <h1>Welcome</h1>
+
+
+<%@products.each do |product| %>
+<hr>
+<br>
+ <p>NAME: <%= product.name%></p><p>DESCRIPTION: <%= product.description%></p><p>PRICE:<%=product.formatted_price%></p>
+
+<%end%>
